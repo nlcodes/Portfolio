@@ -111,6 +111,11 @@ li {
   border-radius: 2px;
 }
 
+[data-theme="dark"] .tech {
+  background: #3a3a3a;
+  color: #ddd;
+}
+
 /* Links */
 .links {
   display: flex;
