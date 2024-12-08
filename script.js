@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const newTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = newTheme;
     sessionStorage.setItem('lastPageTheme', newTheme);
-    themeToggle.textContent = newTheme === 'dark' ? '☀' : '☽';
+    themeToggle.textContent = newTheme === 'dark' ? '☼' : '☽';
   });
 });
