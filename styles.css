@@ -1,8 +1,20 @@
 :root {
+  /* Light theme */
   --bg-color: #fafafa;
   --text-color: #333;
   --accent-color: #666;
   --hover-color: #000;
+  --project-bg: white;
+  --border-color: #eee;
+}
+
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --text-color: #fff;
+  --accent-color: #aaa;
+  --hover-color: #fff;
+  --project-bg: #2a2a2a;
+  --border-color: #333;
 }
 
 * {
@@ -59,6 +71,9 @@ li {
   border: 1px solid #eee;
   transition: transform 0.3s ease;
   cursor: pointer;
+
+  background: var(--project-bg);
+  border: 1px solid var(--border-color);
 }
 
 .project:hover {
@@ -207,4 +222,18 @@ iframe {
  width: 100px;
  height: auto;
  margin-left: 0;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: var(--accent-color);
+}
+
+#theme-toggle:hover {
+  color: var(--hover-color);
 }
