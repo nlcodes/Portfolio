@@ -1,0 +1,200 @@
+:root {
+  --bg-color: #fafafa;
+  --text-color: #333;
+  --accent-color: #666;
+  --hover-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--bg-color);
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+/* Project Grid */
+.projects {
+  margin: 4rem 0;
+}
+
+.project {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: white;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  display: none;
+  margin-top: 1rem;
+}
+
+.project.active .project-details {
+  display: block;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tech {
+  font-size: 0.875rem;
+  color: var(--accent-color);
+  background: #f0f0f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2px;
+}
+
+/* Links */
+.links {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+  border-bottom-color: var(--hover-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Nav Bar */
+.nav-menu {
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 1rem;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--hover-color);
+  border-bottom-color: var(--hover-color);
+}
+
+.nav-links a.active {
+  color: var(--text-color);
+  border-bottom-color: var(--text-color);
+}
+
+.container {
+  padding-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .nav-container {
+    padding: 0 1rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Video */
+iframe {
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  display: block;
+}
+
+/* Header Images  */
+.header-flex {
+ display: flex;
+ align-items: center;
+ margin-left: 0;
+}
+
+.header-image {
+ width: 100px;
+ height: auto;
+ margin-left: 0;
+}
