@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   
   // Set initial button state based on current theme
-  themeToggle.textContent = document.documentElement.dataset.theme === 'dark' ? '☀' : '☽';
+  themeToggle.textContent = document.documentElement.dataset.theme === 'dark' ? '☼' : '☽';
 
   themeToggle.addEventListener('click', () => {
     const newTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
