@@ -193,6 +193,7 @@ iframe {
   aspect-ratio: 16/9;
   height: auto;
   display: block;
+  margin-bottom: 1rem;
 }
 
 /* Header Images  */
